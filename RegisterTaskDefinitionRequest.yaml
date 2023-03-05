@@ -1,5 +1,5 @@
 ipcMode:
-executionRoleArn: arn:aws:iam::963327739844:role/ecsTaskExecutionRole
+executionRoleArn: arn:aws:iam::963327739844:role/ecs
 containerDefinitions:
 - dnsSearchDomains:
   environmentFiles:
@@ -44,7 +44,7 @@ containerDefinitions:
   name: nginx
 placementConstraints: []
 memory: '512'
-taskRoleArn: arn:aws:iam::963327739844:role/ecsTaskExecutionRole
+taskRoleArn: arn:aws:iam::963327739844:role/ecs
 family: ecs-dev-env
 pidMode:
 requiresCompatibilities:
