@@ -1,0 +1,13 @@
+launchType: FARGATE
+serviceName: <+stage.variables.serviceName>
+desiredCount: <+stage.variables.desiredCount>
+networkConfiguration:
+  awsvpcConfiguration:
+    securityGroups:
+    - sg-046dc6d08b78c9db1
+    subnets:
+    - subnet-08bcaf6003bab8a00
+    assignPublicIp: ENABLED 
+deploymentConfiguration:
+  maximumPercent: 200
+  minimumHealthyPercent: 100
